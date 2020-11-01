@@ -1,0 +1,25 @@
+.hourContainer {
+    color: #888;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 3px;
+    text-align: center;
+    width: 70px;
+}
+.hourContainer h5 {
+    margin: 0 auto;
+}
+.hourList {
+    display: block;
+    margin: 25px auto;
+    overflow-x: scroll;
+    position: relative;
+    white-space: nowrap;
+    width: 85%;
+}
+.weatherIconHourly {
+    width: 100%;
+}
+::-webkit-scrollbar {
+    display: none;
+}

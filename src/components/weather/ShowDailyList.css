@@ -1,0 +1,36 @@
+.activeDay {
+    border: 2px solid red!important;
+}
+.dailyContainer {
+    background-color: #F8f8f8;
+    border: 1px solid #888;
+    border-radius: 5px;
+    color: #888;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 5px;
+    padding: 5px 0;
+    text-align: center;
+    width: 11%;
+    cursor: pointer;
+}
+.dailyContainer h5 {
+    margin: 0 auto;
+}
+.dailyContainer:hover {
+    border: 1px solid red;
+    box-shadow: 2px 2px 7px #000;
+}
+.darkenText {
+    color: #000;
+}
+.dailyList {
+    display: block;
+    margin: 25px auto;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.weatherIconDaily {
+    width: 100%;
+}

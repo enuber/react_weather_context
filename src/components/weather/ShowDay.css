@@ -1,0 +1,93 @@
+.button {
+    background-color: #3a33d1;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #000;
+    color: #FFF;
+    display: block;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+    width: 200px;
+}
+.button:hover {
+    background-color: #FFF;
+    border: 1px solid #3a33d1;
+    color: #3a33d1;
+}
+.column50 {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 50%;
+}
+.column50 div {
+    font-size: 20px;
+    margin: 10px auto;
+}
+.currentDate {
+    color: #888;
+    padding: 10px;
+}
+.day {
+    font-size: 21px;
+    margin: 4px auto;
+}
+.dayContainer {
+    border: 1px solid darkgrey;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
+}
+.degree {
+    color: #000;
+    font-size: 30px;
+    margin: 0 5px;
+}
+.degreeSmall {
+    font-size: 12px;
+}
+.error {
+    color: red;
+    text-transform: uppercase;
+}
+.farenheit {
+    color: #000;
+    font-size: 30px;
+}
+.farenheitSmall {
+    font-size: 12px;
+}
+.location {
+    font-size: 24px;
+    margin: 8px auto;
+}
+.section {
+    margin-top: 20px;
+}
+.section h2, .centerDiv {
+    text-align: center;
+}
+.temperature {
+    color: #000;
+    font-size: 45px;
+    vertical-align: middle;
+}
+.temperatureMax, .temperatureMin {
+    color: #000;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.temperatureMin {
+    color: #888;
+}
+.weatherDescription {
+    font-size: 18px;
+    margin: 14px auto;
+    text-transform: uppercase;
+}
+.weatherIcon {
+    vertical-align: middle;
+    width: 90px;
+}
