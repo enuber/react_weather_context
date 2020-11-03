@@ -1,11 +1,13 @@
 import './ShowHourly.css';
 import React from 'react';
 import { convertUTC } from '../helper_functions/helpers';
+import WeatherContext from '../../contexts/WeatherContext';
 
 class showHourly extends React.Component {
+    static contextType = WeatherContext;
 
     renderHourList() {
-        const hourList = this.props.hourlyWeather.slice(0, 26);
+        const hourList = this.context.currentWeather.hourly.slice(0, 26);
         return hourList.map(currentTime => {
             const hour = convertUTC(`${currentTime.dt}`, 'hour', 'numeric');
             const icon = "http://openweathermap.org/img/w/"+ currentTime.weather[0].icon +".png";

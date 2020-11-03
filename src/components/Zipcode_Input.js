@@ -1,6 +1,8 @@
 import React from 'react';
+import WeatherContext from '../contexts/WeatherContext';
 
 class Zipcode_Input extends React.Component {
+    static contextType = WeatherContext;
 
     state = {
         zipcode: ''
@@ -11,10 +13,10 @@ class Zipcode_Input extends React.Component {
         e.preventDefault();
         const currentZip = this.state.zipcode;
         if ((currentZip.length === 5) && (this.isInt(currentZip))) {
-            this.props.onSubmit(currentZip, false);
+            this.context.onSearchSubmit(currentZip, false);
             this.setState({zipcode: ''})
         } else {
-            this.props.onSubmit(currentZip, true);
+            this.context.onSearchSubmit(currentZip, true);
         }
     };
 
