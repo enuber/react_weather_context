@@ -17,8 +17,8 @@ class App extends React.Component {
                         <Header/>
                         <ZipcodeInput />
                         <Switch>
-                            <Route path="/" exact render={() => <ShowWeather/>}/>
-                            <Route path="/:day" render={() => <ShowDay/>}/>
+                            <Route path="/apps/weather_context/" exact render={() => <ShowWeather/>}/>
+                            <Route path="/apps/weather_context/:day" render={() => <ShowDay/>}/>
                         </Switch>
                     </Router>
                 </WeatherStore>

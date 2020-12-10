@@ -11,7 +11,7 @@ class showDay extends React.Component {
     //makes sure that if there is no data, it pushes to home so that there are no errors thrown.
     componentDidMount() {
         if(!this.context.dayClickedWeather.dt) {
-            history.push('/');
+            history.push('/apps/weather_context/');
         }
     }
 
@@ -69,7 +69,7 @@ class showDay extends React.Component {
                 <div className="dayContainer">
                     {this.renderChosenDay()}
                 </div>
-                <Link to={`/`} className="button">Back To Current Weather</Link>
+                <Link to={`/apps/weather_context/`} className="button">Back To Current Weather</Link>
             </div>
         )
     }

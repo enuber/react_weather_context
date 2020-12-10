@@ -4,7 +4,7 @@ import Geocode from 'react-geocode';
 import openweatherOnecall from '../apis/openweatherOneCall';
 import Keys from '../config.json';
 
-//this creates the context object. Here 'english' is the default value. We are rendering out a component so we need
+//this creates the context object. Here 'we set default values' . We are rendering out a component so we need
 //it to have a capital letter. Otherwise it will look like a div, form etc
 const Context = React.createContext({
     currentWeather: {},
@@ -17,7 +17,7 @@ const Context = React.createContext({
     error: false
 });
 
-//to access this we would use { LanguageStore } because it's a named export
+//to access this we would use { WeatherStore } because it's a named export
 export class WeatherStore extends React.Component {
     state = {
         currentWeather: {},
@@ -72,7 +72,7 @@ export class WeatherStore extends React.Component {
     };
 
     onSearchSubmit = async (zipcode, error) => {
-        history.push('/');
+        history.push('/apps/weather_context/');
         await this.setState({error: error});
         await this.getLocation(zipcode);
         await this.getWeather(zipcode);
@@ -80,7 +80,7 @@ export class WeatherStore extends React.Component {
 
     onDayClick = (dayClicked, day) => {
         this.setState({dayClickedWeather: dayClicked});
-        history.push(`/${day}`);
+        history.push(`/apps/weather_context/${day}`);
     };
 
     //here we are sharing the state and method to change the state with other components in the application
