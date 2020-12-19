@@ -1,6 +1,6 @@
 {
   "name": "weather_context",
-  "homepage": "https://eriknuber.us/apps/weather_context/",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

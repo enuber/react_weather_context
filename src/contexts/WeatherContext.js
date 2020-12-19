@@ -72,7 +72,7 @@ export class WeatherStore extends React.Component {
     };
 
     onSearchSubmit = async (zipcode, error) => {
-        history.push('/apps/weather_context/');
+        history.push('/');
         await this.setState({error: error});
         await this.getLocation(zipcode);
         await this.getWeather(zipcode);
@@ -80,7 +80,7 @@ export class WeatherStore extends React.Component {
 
     onDayClick = (dayClicked, day) => {
         this.setState({dayClickedWeather: dayClicked});
-        history.push(`/apps/weather_context/${day}`);
+        history.push(`/${day}`);
     };
 
     //here we are sharing the state and method to change the state with other components in the application
